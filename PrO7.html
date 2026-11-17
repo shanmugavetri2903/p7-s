@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biosphere - Medical Biotechnology</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 10px;
+            background: #eaf4fb;
+            color: #23445c;
+        }
+
+        .header, .footer {
+            background: #0877a8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .nav {
+            background: #c8e8f5;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .nav a {
+            color: #0877a8;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: #23445c;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .content {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .content h2 {
+            color: #0877a8;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .gallery div {
+            overflow: hidden;
+            border-radius: 8px;
+            background: #eaf4fb;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        /* Picture Transition */
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery p {
+            text-align: center;
+            padding: 8px;
+            font-weight: bold;
+            color: #0877a8;
+        }
+
+        .sidebar {
+            background: #c8e8f5;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .sidebar h2 {
+            color: #0877a8;
+        }
+
+        .sidebar p {
+            line-height: 1.5;
+        }
+
+        .footer {
+            margin-top: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>🧬 BIOSPHERE</h1>
+        <h3>Biotechnology-Driven Medical Innovations</h3>
+    </div>
+
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+
+        <div class="content">
+
+            <h2 id="about">About Medical Biotechnology</h2>
+
+            <p>
+                Biotechnology is transforming modern medicine through
+                scientific research and advanced technology. It helps
+                develop vaccines, medicines, genetic testing and
+                innovative healthcare solutions.
+            </p>
+
+            <hr>
+
+            <h2 id="gallery">Biotechnology Image Gallery</h2>
+
+            <div class="gallery">
+
+                <div>
+                    <img src="biosphere1.png"
+                         alt="DNA Structure">
+                    <p>DNA Research</p>
+                </div>
+
+                <div>
+                    <img src="biosphere2.png"
+                         alt="Medical Laboratory">
+                    <p>Medical Laboratory</p>
+                </div>
+
+                <div>
+                    <img src="biosphere3.jpg"
+                         alt="Vaccine Research">
+                    <p>Vaccine Development</p>
+                </div>
+
+                <div>
+                    <img src="biosphere4.jpg"
+                         alt="Stem Cell Research">
+                    <p>Stem Cell Research</p>
+                </div>
+
+                <div>
+                    <img src="biosphere5.jpg"
+                         alt="Genetic Engineering">
+                    <p>Genetic Engineering</p>
+                </div>
+
+                <div>
+                    <img src="biosphere6.png"
+                         alt="Medical Innovation">
+                    <p>Medical Innovation</p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h2>Major Medical Innovations</h2>
+
+            <p>
+                Biotechnology plays an important role in modern healthcare.
+                It helps scientists develop better treatments and improve
+                disease diagnosis.
+            </p>
+
+            <p>
+                1. Genetic Engineering<br>
+                2. Vaccine Development<br>
+                3. Stem Cell Research<br>
+                4. Gene Therapy<br>
+                5. Personalized Medicine<br>
+                6. Disease Diagnosis
+            </p>
+
+            <h2>The Future of Biotechnology</h2>
+
+            <p>
+                Biotechnology creates new possibilities in healthcare.
+                It supports medical research, early disease detection
+                and the development of advanced treatments.
+            </p>
+
+        </div>
+
+        <div class="sidebar">
+
+            <h2>🔬 Did You Know?</h2>
+
+            <p>
+                DNA contains the genetic instructions
+                needed for the growth and development
+                of living organisms.
+            </p>
+
+            <hr>
+
+            <h2>🧬 Key Areas</h2>
+
+            <p>
+                Genetic Research
+            </p>
+
+            <p>
+                Medical Testing
+            </p>
+
+            <p>
+                Vaccine Development
+            </p>
+
+            <p>
+                Advanced Healthcare
+            </p>
+
+            <hr>
+
+            <h2>🌱 Our Goal</h2>
+
+            <p>
+                Using science and technology
+                to create a healthier future.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer" id="contact">
+        <h2>🧬 BIOSPHERE</h2>
+        <p>Innovate | Discover | Transform | Heal</p>
+        <p>© 2026 Biosphere</p>
+    </div>
+
+</body>
+</html>
